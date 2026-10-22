@@ -78,13 +78,10 @@ The portfolio is a static web application and does not require Laravel, PHP, or 
 
 ---
 
-## Deployment on Railway
-
-The portfolio is configured for deployment using **Railway**, a cloud hosting platform that supports GitHub-integrated deployments.
 
 ### Deployment Steps
 
-1. Create or log in to an account at https://railway.com.
+1. Create or log in to an account at Vercel.app
 2. Select **New Project**.
 3. Choose **Deploy from GitHub Repo**.
 4. Connect the `Responsive-Digital-Portfolio` repository.
@@ -132,7 +129,7 @@ This portfolio is intended for personal, academic, and professional presentation
 
 **Developed with HTML5, CSS3, and JavaScript.**
 
-**Deployed using Railway.**
+**Deployed using Vervel.**
 
 
 ---
