@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="roseGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7E7E8" />
+      <stop offset="50%" stop-color="#C98C95" />
+      <stop offset="100%" stop-color="#C6A77D" />
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#29252B" flood-opacity="0.15" />
+    </filter>
+  </defs>
+  <!-- Background Circle with border -->
+  <circle cx="32" cy="32" r="30" fill="#29252B" />
+  <circle cx="32" cy="32" r="28" fill="#FFFAF7" stroke="url(#roseGoldGrad)" stroke-width="2" />
+  <!-- Monogram JMYA -->
+  <text x="32" y="38" 
+        font-family="'Playfair Display', Georgia, serif" 
+        font-size="14" 
+        font-weight="700" 
+        letter-spacing="1.5" 
+        text-anchor="middle" 
+        fill="#29252B">JMYA</text>
+  <circle cx="32" cy="46" r="1.5" fill="#C6A77D" />
+</svg>

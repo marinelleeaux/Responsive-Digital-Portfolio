@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!-- Primary Meta Tags -->
+  <title>Jan Marinelle Yap Auditor | UI/UX Designer &amp; System Developer</title>
+  <meta name="title" content="Jan Marinelle Yap Auditor | UI/UX Designer &amp; System Developer" />
+  <meta name="description"
+    content="Official personal digital portfolio of Jan Marinelle Yap Auditor. UI/UX Designer and System Developer showcasing curated digital projects, interface designs, and technical systems." />
+  <meta name="keywords"
+    content="Jan Marinelle Yap Auditor, Jan Marinelle, JMYA, Portfolio, UI/UX Designer, System Developer, Web Development, Philippines, HTML5, CSS3, JavaScript" />
+  <meta name="author" content="Jan Marinelle Yap Auditor" />
+  <meta name="theme-color" content="#FFFAF7" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://jan-marinelle-portfolio.local/" />
+  <meta property="og:title" content="Jan Marinelle Yap Auditor | Digital Portfolio" />
+  <meta property="og:description"
+    content="Explore the creative journey, technical projects, UI/UX designs, and academic background of Jan Marinelle Yap Auditor." />
+  <meta property="og:image" content="assets/images/profile.png" />
+
+  <!-- Twitter Meta -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Jan Marinelle Yap Auditor | Digital Portfolio" />
+  <meta name="twitter:description"
+    content="Explore the creative journey, technical projects, UI/UX designs, and academic background of Jan Marinelle Yap Auditor." />
+  <meta name="twitter:image" content="assets/images/profile.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+  <link rel="apple-touch-icon" href="assets/icons/favicon.svg" />
+
+  <!-- Google Fonts Preconnect & Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body class="luxury-portfolio">
+
+  <!-- ===================================================================
+       1. ANIMATED LOADING SCREEN (PRELOADER)
+       =================================================================== -->
+  <div class="preloader" id="preloader" role="status" aria-label="Loading portfolio experience">
+    <div class="preloader-content">
+      <div class="preloader-monogram-wrap">
+        <div class="preloader-ring"></div>
+        <div class="preloader-monogram">JMYA</div>
+      </div>
+      <h2 class="preloader-name">Jan Marinelle Yap Auditor</h2>
+      <p class="preloader-subtitle">Crafting Digital Elegance</p>
+      <div class="preloader-progress-track">
+        <div class="preloader-progress-bar" id="preloaderProgressBar"></div>
+      </div>
+      <div class="preloader-counter" id="preloaderCounter">0%</div>
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       2. CUSTOM CURSOR (DESKTOP ONLY)
+       =================================================================== -->
+  <div class="custom-cursor" id="customCursor" aria-hidden="true"></div>
+  <div class="cursor-follower" id="cursorFollower" aria-hidden="true"></div>
+
+  <!-- ===================================================================
+       3. SCROLL PROGRESS INDICATOR
+       =================================================================== -->
+  <div class="scroll-progress-bar" id="scrollProgressBar" aria-hidden="true"></div>
+
+  <!-- ===================================================================
+       4. AMBIENT BACKGROUND GLOW & DECORATIVE ORBS
+       =================================================================== -->
+  <div class="ambient-glow ambient-glow-1" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow-2" aria-hidden="true"></div>
+  <div class="ambient-glow ambient-glow-3" aria-hidden="true"></div>
+
+  <!-- ===================================================================
+       5. RESPONSIVE NAVIGATION BAR
+       =================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="nav-container">
+      <!-- Brand Logo -->
+      <a href="#hero" class="nav-brand" aria-label="Jan Marinelle Yap Auditor Home">
+        <span class="brand-monogram">JMYA</span>
+        <span class="brand-divider"></span>
+        <span class="brand-name">Jan Marinelle</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#certificates" class="nav-link">Certificates</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions (Theme Toggle & Download CV) -->
+      <div class="nav-actions">
+        <!-- Theme Toggle Button (Single Dynamic Icon) -->
+        <button type="button" class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle dark and light theme"
+          title="Toggle Theme">
+          <i class="fa-solid fa-moon" id="themeToggleIcon" aria-hidden="true"></i>
+        </button>
+
+        <!-- Download CV Header Button -->
+        <a href="assets/files/Jan-Marinelle-Yap-Auditor_CV.pdf" download="Jan-Marinelle-Yap-Auditor_CV.pdf"
+          class="btn btn-outline btn-sm nav-cv-btn" id="headerDownloadCvBtn">
+          <i class="fa-solid fa-arrow-down-to-line" aria-hidden="true"></i>
+          <span>Download CV</span>
+        </a>
+
+        <!-- Mobile Hamburger Button -->
+        <button type="button" class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle mobile menu"
+          aria-expanded="false" aria-controls="mobileNavMenu">
+          <span class="hamburger-line line-1"></span>
+          <span class="hamburger-line line-2"></span>
+          <span class="hamburger-line line-3"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-drawer" id="mobileNavMenu" aria-hidden="true">
+    <div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
+    <div class="mobile-nav-panel">
+      <div class="mobile-nav-header">
+        <div class="mobile-brand">
+          <span class="brand-monogram">JMYA</span>
+          <span class="brand-name">Jan Marinelle</span>
+        </div>
+        <button type="button" class="mobile-close-btn" id="mobileCloseBtn" aria-label="Close mobile navigation menu">
+          <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <!-- Mobile Theme Toggle Row -->
+      <div class="mobile-theme-row">
+        <span class="mobile-theme-label"><i class="fa-solid fa-circle-half-stroke"></i> Appearance:</span>
+        <button type="button" class="theme-toggle-btn mobile-theme-btn" id="mobileThemeToggleBtn"
+          aria-label="Toggle dark and light theme" title="Toggle Theme">
+          <i class="fa-solid fa-moon" id="mobileThemeToggleIcon" aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <ul class="mobile-nav-links">
+        <li><a href="#hero" class="mobile-link"><i class="fa-solid fa-house" aria-hidden="true"></i> Home</a></li>
+        <li><a href="#about" class="mobile-link"><i class="fa-solid fa-user" aria-hidden="true"></i> About</a></li>
+        <li><a href="#skills" class="mobile-link"><i class="fa-solid fa-code" aria-hidden="true"></i> Skills</a></li>
+        <li><a href="#experience" class="mobile-link"><i class="fa-solid fa-briefcase" aria-hidden="true"></i>
+            Experience</a></li>
+        <li><a href="#projects" class="mobile-link"><i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+            Projects</a></li>
+        <li><a href="#education" class="mobile-link"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+            Education</a></li>
+        <li><a href="#certificates" class="mobile-link"><i class="fa-solid fa-certificate" aria-hidden="true"></i>
+            Certificates</a></li>
+        <li><a href="#contact" class="mobile-link"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Contact</a>
+        </li>
+      </ul>
+
+      <div class="mobile-nav-footer">
+        <a href="assets/files/Jan-Marinelle-Yap-Auditor_CV.pdf" download="Jan-Marinelle-Yap-Auditor_CV.pdf"
+          class="btn btn-primary btn-block">
+          <i class="fa-solid fa-arrow-down-to-line" aria-hidden="true"></i> Download CV
+        </a>
+        <div class="mobile-social-row">
+          <a href="https://github.com/marinelleaux" target="_blank" rel="noopener noreferrer"
+            aria-label="GitHub (@marinelleaux)"><i class="fa-brands fa-github"></i></a>
+          <a href="mailto:janmarinellea@gmail.com" aria-label="Email (janmarinellea@gmail.com)"><i class="fa-regular fa-envelope"></i></a>
+          <a href="tel:09358343056" aria-label="Phone (09358343056)"><i class="fa-solid fa-phone"></i></a>
+          <a href="https://linkedin.com/in/jan-marinelle-auditor" target="_blank" rel="noopener noreferrer"
+            aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT CONTAINER -->
+  <main id="mainContent">
+
+    <!-- ===================================================================
+         6. HERO SECTION — PREMIUM FIRST IMPRESSION
+         =================================================================== -->
+    <section class="hero-section" id="hero" aria-label="Hero Introduction">
+      <div class="container hero-container">
+        <!-- Hero Text Column -->
+        <div class="hero-text-col">
+          <div class="hero-badge reveal-fade">
+            <span class="badge-dot"></span>
+            <span class="badge-text" id="heroGreetingText">HELLO, WELCOME TO MY PORTFOLIO</span>
+          </div>
+
+          <h1 class="hero-title reveal-title">
+            Hi, I'm <span class="text-highlight">Jan Marinelle</span> Yap Auditor
+          </h1>
+
+          <div class="hero-subtitle-wrap reveal-fade">
+            <span class="subtitle-static">I am a </span>
+            <span class="typed-text" id="typedSubtitle">UI/UX Designer</span>
+            <span class="typed-cursor" aria-hidden="true">|</span>
+          </div>
+
+          <p class="hero-description reveal-fade" id="heroDescription">
+            An Information Technology enthusiast interested in UI/UX design and system development, with skills in web development, database management, and creating user-friendly interfaces. Eager to learn, innovate, and grow professionally.
+          </p>
+
+          <div class="hero-cta-group reveal-fade">
+            <a href="#projects" class="btn btn-primary magnetic-btn">
+              <span>Explore My Work</span>
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+
+            <a href="assets/files/Jan-Marinelle-Yap-Auditor_CV.pdf" download="Jan-Marinelle-Yap-Auditor_CV.pdf"
+              class="btn btn-outline magnetic-btn hero-download-btn">
+              <i class="fa-solid fa-arrow-down-to-line" aria-hidden="true"></i>
+              <span>Download My CV</span>
+            </a>
+
+            <a href="#contact" class="btn btn-ghost magnetic-btn">
+              <span>Let's Connect</span>
+            </a>
+          </div>
+
+          <!-- Social Quick Links in Hero -->
+          <div class="hero-social-strip reveal-fade">
+            <span class="social-strip-label">Connect with me:</span>
+            <div class="social-icon-links">
+              <a href="https://github.com/marinelleaux" target="_blank" rel="noopener noreferrer"
+                class="social-pill" aria-label="GitHub Repositories (@marinelleaux)">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+              </a>
+              <a href="mailto:janmarinellea@gmail.com" class="social-pill" aria-label="Direct Email (janmarinellea@gmail.com)">
+                <i class="fa-regular fa-envelope" aria-hidden="true"></i>
+              </a>
+              <a href="tel:09358343056" class="social-pill" aria-label="Phone Contact (09358343056)">
+                <i class="fa-solid fa-phone" aria-hidden="true"></i>
+              </a>
+              <a href="https://linkedin.com/in/jan-marinelle-auditor" target="_blank" rel="noopener noreferrer"
+                class="social-pill" aria-label="LinkedIn Profile">
+                <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual / Portrait Column -->
+        <div class="hero-visual-col">
+          <div class="hero-portrait-wrapper tilt-card" data-tilt>
+            <!-- Decorative Frames & Geometry -->
+            <div class="portrait-halo" aria-hidden="true"></div>
+            <div class="portrait-gold-frame" aria-hidden="true"></div>
+            <div class="portrait-blush-shadow" aria-hidden="true"></div>
+
+            <!-- Portrait Image Container -->
+            <div class="portrait-image-container">
+              <img src="assets/images/profile.jpg" alt="Portrait photo of Jan Marinelle Yap Auditor"
+                class="portrait-img" id="heroPortraitImg" loading="eager"
+                onerror="this.onerror=null; this.src='assets/images/about.jpg';" />
+              <div class="portrait-overlay-sheen"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         7. ABOUT ME SECTION
+         =================================================================== -->
+    <section class="section about-section" id="about" aria-label="About Jan Marinelle Yap Auditor">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <span class="section-subtitle">A Little About Myself</span>
+          <h2 class="section-title">Get to Know Me</h2>
+          <div class="section-divider"><span class="divider-gem"></span></div>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Column: Official ID Card with Lace (Lanyard) -->
+          <div class="about-visual-col">
+            <div class="about-id-stage" id="aboutIdStage">
+              <!-- ID Lanyard / Lace hanging from above -->
+              <div class="id-lanyard-assembly" aria-hidden="true">
+                <div class="id-lace-strap strap-left">
+                  <span class="id-lace-text">JMYA &bull; JAN MARINELLE &bull; BSIT</span>
+                </div>
+                <div class="id-lace-strap strap-right">
+                  <span class="id-lace-text">UI/UX DESIGNER &bull; SYSTEM DEV</span>
+                </div>
+                <div class="id-lanyard-hardware">
+                  <div class="id-clasp-ring"></div>
+                  <div class="id-metal-clip"></div>
+                </div>
+              </div>
+
+              <!-- ID Badge Card Container with 3D Tilt -->
+              <div class="id-badge-card tilt-card" id="aboutIdCard" data-tilt>
+                <!-- Top Punch Hole Slot -->
+                <div class="id-punch-slot" aria-hidden="true"></div>
+
+                <!-- Card Body -->
+                <div class="id-badge-body">
+                  <!-- Header Strip -->
+                  <div class="id-card-header">
+                    <div class="id-brand-chip">
+                      <i class="fa-solid fa-microchip id-chip-icon" aria-hidden="true"></i>
+                      <div class="id-org-info">
+                        <span class="id-org-title">TORRES CAPITOL COLLEGE</span>
+                        <span class="id-org-dept">Information Technology Dept.</span>
+                      </div>
+                    </div>
+                    <span class="id-pass-badge">STUDENT ID</span>
+                  </div>
+
+                  <!-- Photo Wrap (Portrait Rectangle) -->
+                  <div class="id-photo-frame">
+                    <img src="assets/images/about.jpg" alt="Official ID Portrait photo of Jan Marinelle Yap Auditor"
+                      class="id-photo-img" loading="lazy"
+                      onerror="this.onerror=null; this.src='assets/images/profile.jpg';" />
+                    <div class="id-photo-overlay"></div>
+                  </div>
+
+                  <!-- ID Card Footer Info -->
+                  <div class="id-card-footer">
+                    <h4 class="id-card-name">Jan Marinelle Yap Auditor</h4>
+                    <p class="id-card-role">UI/UX Designer &bull; System Developer</p>
+
+                    <div class="id-card-bottom-row">
+                      <div class="id-number-block">
+                        <span class="id-num-label">ID NO.</span>
+                        <span class="id-num-val">2027-BSIT</span>
+                      </div>
+                      <div class="id-barcode-graphic" aria-hidden="true">
+                        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Acrylic Plastic Badge Gloss Overlay -->
+                <div class="id-badge-sheen" aria-hidden="true"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Biography & Editable Details -->
+          <div class="about-content-col">
+            <h3 class="about-tagline">
+              UI/UX Designer &amp; System Developer passionate about purposeful technology.
+            </h3>
+
+            <div class="about-bio-text" id="aboutBioContainer">
+              <p>
+                An Information Technology enthusiast interested in UI/UX design and system development, with skills in web development, database management, and creating user-friendly interfaces. Eager to learn, innovate, and grow professionally.
+              </p>
+            </div>
+
+            <!-- Editable Personal Details Grid (From CV) -->
+            <div class="personal-details-grid" id="personalDetailsGrid">
+              <div class="detail-item">
+                <span class="detail-label"><i class="fa-regular fa-user"></i> Full Name:</span>
+                <span class="detail-value">Jan Marinelle Yap Auditor</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label"><i class="fa-solid fa-briefcase"></i> Professional Focus:</span>
+                <span class="detail-value">UI/UX Designer | System Developer</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label"><i class="fa-solid fa-location-dot"></i> Location:</span>
+                <span class="detail-value">Purok-5 North Poblacion, Maramag, Bukidnon</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label"><i class="fa-regular fa-envelope"></i> Email:</span>
+                <span class="detail-value"><a href="mailto:janmarinellea@gmail.com" class="text-link">janmarinellea@gmail.com</a></span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label"><i class="fa-solid fa-phone"></i> Contact Number:</span>
+                <span class="detail-value"><a href="tel:09358343056" class="text-link">09358343056</a></span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label"><i class="fa-brands fa-github"></i> GitHub:</span>
+                <span class="detail-value"><a href="https://github.com/marinelleaux" target="_blank" rel="noopener noreferrer" class="text-link">@marinelleaux</a></span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label"><i class="fa-solid fa-language"></i> Languages:</span>
+                <span class="detail-value">English, Tagalog, Cebuano</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label"><i class="fa-solid fa-graduation-cap"></i> Education:</span>
+                <span class="detail-value">BSIT • Torres Capitol College Inc. (Graduated: 2027)</span>
+              </div>
+              <div class="detail-item detail-item-full">
+                <span class="detail-label"><i class="fa-solid fa-heart"></i> Core Interests:</span>
+                <span class="detail-value">UI/UX Design, Web Development, System Architecture, Database Management</span>
+              </div>
+              <div class="detail-item detail-item-full">
+                <span class="detail-label"><i class="fa-solid fa-bullseye"></i> Career Goals:</span>
+                <span class="detail-value">To excel as a UI/UX Designer and System Developer, delivering intuitive, accessible, and high-impact digital solutions that simplify workflows and empower communities.</span>
+              </div>
+            </div>
+
+            <!-- Signature & Actions -->
+            <div class="about-footer-row">
+              <div class="about-signature-wrap">
+                <span class="signature-font">Jan Marinelle Yap Auditor</span>
+                <span class="signature-caption">Signature of Authenticity</span>
+              </div>
+
+              <div class="about-actions-wrap">
+                <a href="assets/files/Jan-Marinelle-Yap-Auditor_CV.pdf" download="Jan-Marinelle-Yap-Auditor_CV.pdf"
+                  class="btn btn-primary btn-sm">
+                  <i class="fa-solid fa-arrow-down-to-line"></i> Download CV
+                </a>
+                <button type="button" class="btn btn-outline btn-sm" id="viewCvModalBtn">
+                  <i class="fa-regular fa-eye"></i> View CV
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         8. SKILLS AND EXPERTISE SECTION
+         =================================================================== -->
+    <section class="section skills-section" id="skills" aria-label="Skills and Technical Competencies">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <span class="section-subtitle">Capabilities & Competencies</span>
+          <h2 class="section-title">Skills & Expertise</h2>
+          <p class="section-intro-text">
+            A balanced synthesis of technical front-end proficiencies and essential professional competencies developed
+            through academic coursework and hands-on projects.
+          </p>
+          <div class="section-divider"><span class="divider-gem"></span></div>
+        </div>
+
+        <!-- Skills Filter Tabs -->
+        <div class="skills-tabs-container" role="tablist" aria-label="Skills Category Filter">
+          <button type="button" class="skill-tab-btn active" data-tab="all" role="tab" aria-selected="true">
+            <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+            <span>All Skills</span>
+          </button>
+          <button type="button" class="skill-tab-btn" data-tab="technical" role="tab" aria-selected="false">
+            <i class="fa-solid fa-code" aria-hidden="true"></i>
+            <span>Technical Skills</span>
+          </button>
+          <button type="button" class="skill-tab-btn" data-tab="professional" role="tab" aria-selected="false">
+            <i class="fa-solid fa-user-check" aria-hidden="true"></i>
+            <span>Professional Skills</span>
+          </button>
+        </div>
+
+        <!-- Skills Container -->
+        <div class="skills-showcase" id="skillsContainer">
+          <!-- Rendered dynamically by js/main.js using PORTFOLIO_CONFIG -->
+        </div>
+
+        <!-- Skills Note on Proficiency -->
+        <div class="skills-disclaimer text-center">
+          <p>
+            <i class="fa-solid fa-circle-info" aria-hidden="true"></i>
+            Proficiency levels reflect demonstrated coursework mastery, lab projects, and practical application.
+            Continuous improvement is actively pursued.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         9. PROFESSIONAL EXPERIENCE SECTION
+         =================================================================== -->
+    <section class="section experience-section" id="experience" aria-label="Professional Experience and Journey">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <span class="section-subtitle">Leadership & Applied Practice</span>
+          <h2 class="section-title">My Professional Journey</h2>
+          <p class="section-intro-text">
+            A chronological timeline of hands-on academic leadership, student technical support, and creative freelance engagements.
+          </p>
+          <div class="section-divider"><span class="divider-gem"></span></div>
+        </div>
+
+        <!-- Vertical Animated Timeline -->
+        <div class="timeline-container" id="timelineContainer">
+          <div class="timeline-track" id="timelineTrack" aria-hidden="true"></div>
+
+          <div class="timeline-items" id="experienceList">
+            <!-- Rendered dynamically from PORTFOLIO_CONFIG via js/main.js -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         10. PROJECTS & SELECTED WORKS SECTION
+         =================================================================== -->
+    <section class="section projects-section" id="projects" aria-label="Selected Works and Projects">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <span class="section-subtitle">A Collection of My Creative and Technical Work</span>
+          <h2 class="section-title">Selected Works & Projects</h2>
+          <p class="section-intro-text">
+            Curated showcase of web development prototypes, UI/UX explorations, and academic capstone achievements.
+            Filter by category to explore specific works.
+          </p>
+          <div class="section-divider"><span class="divider-gem"></span></div>
+        </div>
+
+        <!-- Project Filter Buttons -->
+        <div class="projects-filter-bar" role="tablist" aria-label="Filter Projects by Category">
+          <button type="button" class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All
+            Projects</button>
+          <button type="button" class="filter-btn" data-filter="web-dev" role="tab" aria-selected="false">Web
+            Development</button>
+          <button type="button" class="filter-btn" data-filter="ui-ux" role="tab" aria-selected="false">UI/UX
+            Design</button>
+          <button type="button" class="filter-btn" data-filter="academic" role="tab" aria-selected="false">Academic
+            Projects</button>
+          <button type="button" class="filter-btn" data-filter="other" role="tab" aria-selected="false">Other
+            Works</button>
+        </div>
+
+        <!-- Project Cards Grid -->
+        <div class="projects-grid" id="projectsGrid" aria-live="polite">
+          <!-- Populated dynamically via js/projects.js using PORTFOLIO_CONFIG -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         11. EDUCATION SECTION
+         =================================================================== -->
+    <section class="section education-section" id="education" aria-label="Educational Background">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <span class="section-subtitle">Academic Milestones & Foundational Learning</span>
+          <h2 class="section-title">My Educational Background</h2>
+          <p class="section-intro-text">
+            Formal academic foundation in Information Technology and Information & Communications Technology (ICT).
+          </p>
+          <div class="section-divider"><span class="divider-gem"></span></div>
+        </div>
+
+        <!-- Education Cards Grid -->
+        <div class="education-grid" id="educationGrid">
+          <!-- Rendered dynamically from PORTFOLIO_CONFIG -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         12. CERTIFICATIONS & ACHIEVEMENTS SECTION
+         =================================================================== -->
+    <section class="section certificates-section" id="certificates" aria-label="Certifications and Achievements">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <span class="section-subtitle">Verified Training & Technical Credentials</span>
+          <h2 class="section-title">Certificates & Achievements</h2>
+          <p class="section-intro-text">
+            Verified credentials and coursework completions reflecting continuous commitment to technical mastery. Click
+            any certificate to preview in high resolution.
+          </p>
+          <div class="section-divider"><span class="divider-gem"></span></div>
+        </div>
+
+        <!-- Certificates Grid -->
+        <div class="certificates-grid" id="certificatesGrid">
+          <!-- Rendered dynamically from PORTFOLIO_CONFIG via js/projects.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         13. CONTACT SECTION
+         =================================================================== -->
+    <section class="section contact-section" id="contact" aria-label="Contact Jan Marinelle Yap Auditor">
+      <div class="container">
+        <!-- Section Header -->
+        <div class="section-header text-center">
+          <span class="section-subtitle">Have an opportunity, collaboration, or question?</span>
+          <h2 class="section-title">Let's Create Something Meaningful</h2>
+          <p class="section-intro-text">
+            Whether you have an internship inquiry, project collaboration, or simply want to connect, I'd love to hear
+            from you.
+          </p>
+          <div class="section-divider"><span class="divider-gem"></span></div>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Left Column: Contact Cards & Info -->
+          <div class="contact-info-col">
+            <div class="contact-card tilt-card" data-tilt>
+              <div class="contact-card-header">
+                <div class="contact-avatar-monogram">JMYA</div>
+                <div class="contact-card-title">
+                  <h4>Jan Marinelle Yap Auditor</h4>
+                  <p>UI/UX Designer | System Developer</p>
+                </div>
+              </div>
+
+              <div class="contact-items-list">
+                <div class="contact-info-item">
+                  <div class="contact-icon-box"><i class="fa-regular fa-envelope"></i></div>
+                  <div class="contact-info-text">
+                    <span class="info-label">Email Address</span>
+                    <a href="mailto:janmarinellea@gmail.com" class="info-link"
+                      id="contactEmailLink">janmarinellea@gmail.com</a>
+                  </div>
+                  <button type="button" class="copy-pill-btn" id="copyEmailBtn" title="Copy Email to Clipboard">
+                    <i class="fa-regular fa-copy"></i>
+                  </button>
+                </div>
+
+                <div class="contact-info-item">
+                  <div class="contact-icon-box"><i class="fa-solid fa-phone"></i></div>
+                  <div class="contact-info-text">
+                    <span class="info-label">Contact Number</span>
+                    <a href="tel:09358343056" class="info-link">09358343056</a>
+                  </div>
+                </div>
+
+                <div class="contact-info-item">
+                  <div class="contact-icon-box"><i class="fa-solid fa-location-dot"></i></div>
+                  <div class="contact-info-text">
+                    <span class="info-label">Location</span>
+                    <span class="info-value">Purok-5 North Poblacion, Maramag, Bukidnon</span>
+                  </div>
+                </div>
+
+                <div class="contact-info-item">
+                  <div class="contact-icon-box"><i class="fa-brands fa-github"></i></div>
+                  <div class="contact-info-text">
+                    <span class="info-label">GitHub Profile</span>
+                    <a href="https://github.com/marinelleaux" target="_blank" rel="noopener noreferrer" class="info-link">@marinelleaux</a>
+                  </div>
+                </div>
+
+                <div class="contact-info-item">
+                  <div class="contact-icon-box"><i class="fa-solid fa-file-pdf"></i></div>
+                  <div class="contact-info-text">
+                    <span class="info-label">Curriculum Vitae</span>
+                    <span class="info-value">Jan-Marinelle-Yap-Auditor_CV.pdf</span>
+                  </div>
+                  <a href="assets/files/Jan-Marinelle-Yap-Auditor_CV.pdf" download="Jan-Marinelle-Yap-Auditor_CV.pdf"
+                    class="btn btn-outline btn-xs">
+                    Download
+                  </a>
+                </div>
+              </div>
+
+              <!-- Social Links Row -->
+              <div class="contact-social-section">
+                <span class="social-section-title">Connect on Platforms:</span>
+                <div class="contact-social-icons">
+                  <a href="https://github.com/marinelleaux" target="_blank" rel="noopener noreferrer"
+                    class="social-btn" aria-label="GitHub (@marinelleaux)">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                  <a href="mailto:janmarinellea@gmail.com" class="social-btn" aria-label="Email Client">
+                    <i class="fa-regular fa-envelope"></i>
+                  </a>
+                  <a href="tel:09358343056" class="social-btn" aria-label="Phone (09358343056)">
+                    <i class="fa-solid fa-phone"></i>
+                  </a>
+                  <a href="https://linkedin.com/in/jan-marinelle-auditor" target="_blank"
+                    rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Client-side Contact Form -->
+          <div class="contact-form-col">
+            <div class="form-container">
+              <div class="form-header">
+                <h3>Send a Direct Message</h3>
+                <p>
+                  Have a question, collaboration idea, or opportunity? Fill out the form below to send a message directly to <strong>janmarinellea@gmail.com</strong>.
+                </p>
+              </div>
+
+              <form id="contactForm" class="contact-form" action="https://formsubmit.co/janmarinellea@gmail.com" method="POST" novalidate>
+                <!-- FormSubmit Configuration Fields -->
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_subject" id="formSubmitSubject" value="New Portfolio Inquiry - Jan Marinelle">
+
+                <!-- Full Name Field -->
+                <div class="form-group">
+                  <label for="senderName" class="form-label">Full Name <span class="required">*</span></label>
+                  <div class="input-wrapper">
+                    <i class="fa-regular fa-user input-icon" aria-hidden="true"></i>
+                    <input type="text" id="senderName" name="name" class="form-input" placeholder="e.g. Maria Santos"
+                      required />
+                  </div>
+                  <span class="form-error-msg" id="nameError" aria-live="polite"></span>
+                </div>
+
+                <!-- Email Field -->
+                <div class="form-group">
+                  <label for="senderEmail" class="form-label">Email Address <span class="required">*</span></label>
+                  <div class="input-wrapper">
+                    <i class="fa-regular fa-envelope input-icon" aria-hidden="true"></i>
+                    <input type="email" id="senderEmail" name="email" class="form-input"
+                      placeholder="e.g. maria@example.com" required />
+                  </div>
+                  <span class="form-error-msg" id="emailError" aria-live="polite"></span>
+                </div>
+
+                <!-- Subject Field -->
+                <div class="form-group">
+                  <label for="senderSubject" class="form-label">Subject <span class="required">*</span></label>
+                  <div class="input-wrapper">
+                    <i class="fa-solid fa-tag input-icon" aria-hidden="true"></i>
+                    <input type="text" id="senderSubject" name="subject" class="form-input"
+                      placeholder="e.g. Internship Opportunity / Collaboration" required />
+                  </div>
+                  <span class="form-error-msg" id="subjectError" aria-live="polite"></span>
+                </div>
+
+                <!-- Message Field -->
+                <div class="form-group">
+                  <label for="senderMessage" class="form-label">Message Content <span class="required">*</span></label>
+                  <div class="input-wrapper">
+                    <i class="fa-regular fa-comment-dots input-icon textarea-icon" aria-hidden="true"></i>
+                    <textarea id="senderMessage" name="message" class="form-input form-textarea" rows="5"
+                      placeholder="Share your message or inquiry here..." required></textarea>
+                  </div>
+                  <span class="form-error-msg" id="messageError" aria-live="polite"></span>
+                </div>
+
+                <!-- Form Action Button -->
+                <div class="form-actions">
+                  <button type="submit" class="btn btn-primary btn-block magnetic-btn" id="sendFormBtn">
+                    <span>Send Message</span>
+                    <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                  </button>
+                </div>
+
+                <!-- Form Note -->
+                <p class="form-notice">
+                  <i class="fa-solid fa-envelope-circle-check"></i>
+                  Direct delivery to <a href="mailto:janmarinellea@gmail.com" class="text-link">janmarinellea@gmail.com</a>.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================================================================
+       14. LUXURY FOOTER
+       =================================================================== -->
+  <footer class="site-footer" id="siteFooter">
+    <div class="footer-ambient-border"></div>
+    <div class="container footer-container">
+      <div class="footer-top-row">
+        <!-- Footer Monogram & Brand Statement -->
+        <div class="footer-brand-col">
+          <div class="footer-brand">
+            <span class="brand-monogram">JMYA</span>
+            <span class="footer-full-name">Jan Marinelle Yap Auditor</span>
+          </div>
+          <p class="footer-tagline">
+            "Creating, Learning, and Growing Every Day."
+          </p>
+          <p class="footer-subtext">
+            Crafted with passion, semantic HTML5, modern CSS3 animations, and Vanilla JavaScript.
+          </p>
+        </div>
+
+        <!-- Quick Navigation Links -->
+        <div class="footer-nav-col">
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills & Expertise</a></li>
+            <li><a href="#experience">Experience Timeline</a></li>
+            <li><a href="#projects">Selected Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#certificates">Certificates</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Documents & Social Connections -->
+        <div class="footer-docs-col">
+          <h4 class="footer-col-title">Official Documents</h4>
+          <ul class="footer-links-list">
+            <li>
+              <a href="assets/files/Jan-Marinelle-Yap-Auditor_CV.pdf" download="Jan-Marinelle-Yap-Auditor_CV.pdf">
+                <i class="fa-solid fa-file-arrow-down"></i> Download Full CV
+              </a>
+            </li>
+            <li>
+              <a href="assets/files/Jan-Marinelle-Yap-Auditor_CV.pdf" target="_blank" rel="noopener noreferrer">
+                <i class="fa-regular fa-file-lines"></i> Open CV in Browser Tab
+              </a>
+            </li>
+          </ul>
+
+          <h4 class="footer-col-title" style="margin-top: 1.5rem;">Connect</h4>
+          <div class="footer-social-row">
+            <a href="https://github.com/marinelleaux" target="_blank" rel="noopener noreferrer"
+              aria-label="GitHub (@marinelleaux)"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:janmarinellea@gmail.com" aria-label="Email (janmarinellea@gmail.com)"><i class="fa-regular fa-envelope"></i></a>
+            <a href="tel:09358343056" aria-label="Phone (09358343056)"><i class="fa-solid fa-phone"></i></a>
+            <a href="https://linkedin.com/in/jan-marinelle-auditor" target="_blank" rel="noopener noreferrer"
+              aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Bar with Copyright & Back to Top -->
+      <div class="footer-bottom-row">
+        <p class="footer-copyright" id="footerCopyright">
+          &copy; <span id="currentYear">2026</span> JMYA. All Rights Reserved.
+        </p>
+        <p class="footer-designed-by">
+          Designed with by Jan Marinelle Auditor
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================================
+       15. BACK-TO-TOP BUTTON (WITH SCROLL PROGRESS RING)
+       =================================================================== -->
+  <button type="button" class="back-to-top-btn" id="backToTopBtn" aria-label="Scroll back to top of page">
+    <svg class="progress-ring" width="48" height="48" viewBox="0 0 48 48">
+      <circle class="progress-ring-bg" cx="24" cy="24" r="20" fill="transparent" stroke="rgba(201, 140, 149, 0.2)"
+        stroke-width="2.5" />
+      <circle class="progress-ring-circle" id="scrollProgressCircle" cx="24" cy="24" r="20" fill="transparent"
+        stroke="#C6A77D" stroke-width="2.5" stroke-dasharray="125.66" stroke-dashoffset="125.66" />
+    </svg>
+    <i class="fa-solid fa-arrow-up back-to-top-arrow" aria-hidden="true"></i>
+  </button>
+
+  <!-- ===================================================================
+       16. INTERACTIVE PROJECT DETAILS MODAL
+       =================================================================== -->
+  <div class="modal-dialog-backdrop" id="projectModalBackdrop" aria-hidden="true">
+    <div class="modal-window project-modal" role="dialog" aria-modal="true" aria-labelledby="modalProjectTitle"
+      id="projectModal">
+      <!-- Modal Close Button -->
+      <button type="button" class="modal-close-btn" id="projectModalCloseBtn" aria-label="Close Project Modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <!-- Modal Body Content -->
+      <div class="modal-scroll-body" id="projectModalContent">
+        <!-- Injected dynamically by js/projects.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       17. INTERACTIVE CERTIFICATE PREVIEW MODAL
+       =================================================================== -->
+  <div class="modal-dialog-backdrop" id="certificateModalBackdrop" aria-hidden="true">
+    <div class="modal-window certificate-modal" role="dialog" aria-modal="true" aria-labelledby="modalCertTitle"
+      id="certificateModal">
+      <button type="button" class="modal-close-btn" id="certModalCloseBtn" aria-label="Close Certificate Modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="modal-scroll-body cert-modal-body" id="certModalContent">
+        <!-- Injected dynamically by js/projects.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       18. CV PREVIEW MODAL
+       =================================================================== -->
+  <div class="modal-dialog-backdrop" id="cvModalBackdrop" aria-hidden="true">
+    <div class="modal-window cv-modal" role="dialog" aria-modal="true" aria-labelledby="cvModalTitle" id="cvModal">
+      <button type="button" class="modal-close-btn" id="cvModalCloseBtn" aria-label="Close CV Modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="cv-modal-inner">
+        <div class="cv-modal-header">
+          <h3 id="cvModalTitle">Curriculum Vitae Preview</h3>
+          <p>Jan Marinelle Yap Auditor — Official CV</p>
+        </div>
+        <div class="cv-frame-wrap">
+          <iframe src="assets/files/Jan-Marinelle-Yap-Auditor_CV.pdf" title="Jan Marinelle Yap Auditor CV"
+            class="cv-iframe"></iframe>
+        </div>
+        <div class="cv-modal-footer">
+          <a href="assets/files/Jan-Marinelle-Yap-Auditor_CV.pdf" download="Jan-Marinelle-Yap-Auditor_CV.pdf"
+            class="btn btn-primary btn-sm">
+            <i class="fa-solid fa-arrow-down-to-line"></i> Download PDF Document
+          </a>
+          <a href="assets/files/Jan-Marinelle-Yap-Auditor_CV.pdf" target="_blank" rel="noopener noreferrer"
+            class="btn btn-outline btn-sm">
+            <i class="fa-solid fa-up-right-from-square"></i> Open in New Tab
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================================================================
+       19. ANIMATED TOAST NOTIFICATIONS CONTAINER
+       =================================================================== -->
+  <div class="toast-container" id="toastContainer" aria-live="polite" aria-atomic="true"></div>
+
+  <!-- ===================================================================
+       20. JAVASCRIPT LIBRARIES & MODULES
+       =================================================================== -->
+  <!-- GSAP & ScrollTrigger CDN with graceful fallback if offline -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Project Modules -->
+  <script src="js/config.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
