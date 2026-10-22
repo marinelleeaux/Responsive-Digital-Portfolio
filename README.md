@@ -40,58 +40,6 @@ The platform provides an organized presentation of educational background, acade
 - **Responsive Design** – Optimized for desktops, tablets, and mobile devices.
 - **Interactive Elements** – Smooth transitions, animations, and engaging visual effects.
 
----
-
-## Technologies Used
-
-| Technology | Purpose |
-|------------|---------|
-| HTML5 | Website structure and content |
-| CSS3 | Styling and responsive layouts |
-| JavaScript | Interactive features |
-| Git | Version control |
-| GitHub | Source code management |
-| Node.js | Runtime for the static file server |
-| Railway | Cloud hosting and deployment |
-
----
-
-## Installation and Setup
-
-Follow these instructions to run the project locally.
-
-**1. Clone the repository**
-
-    git clone https://github.com/marinelleeaux/Responsive-Digital-Portfolio.git
-
-**2. Navigate to the project directory**
-
-    cd Responsive-Digital-Portfolio
-
-**3. Open the website**
-
-Open `index.html` in your preferred web browser.
-
-Alternatively, use a local development server to preview the website.
-
-The portfolio is a static web application and does not require Laravel, PHP, or MySQL.
-
----
-
-
-### Deployment Steps
-
-1. Create or log in to an account at Vercel.app
-2. Select **New Project**.
-3. Choose **Deploy from GitHub Repo**.
-4. Connect the `Responsive-Digital-Portfolio` repository.
-5. Ensure the project has a working `package.json` with a start script for serving static files.
-6. Configure the application to listen on Railway's provided `PORT`.
-7. Deploy the application.
-8. Navigate to **Settings > Networking** and select **Generate Domain**.
-9. Open the generated URL to access the live portfolio.
-
-Railway provides HTTPS-enabled domains and supports automatic redeployment when changes are pushed to the connected GitHub branch.
 
 ---
 
@@ -129,7 +77,7 @@ This portfolio is intended for personal, academic, and professional presentation
 
 **Developed with HTML5, CSS3, and JavaScript.**
 
-**Deployed using Vervel.**
+**Deployed using Vercel.**
 
 
 ---
